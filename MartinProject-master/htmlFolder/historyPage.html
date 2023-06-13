@@ -66,6 +66,23 @@
         </div>
     </div>
 
+    <!-- these are the modals section-->
+    <div>
+        <div class="modal fade" id="historyVideo" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <video id="video" src="" controls style="width: 100%;"></video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- this is the history  -->
     <div class="container-fluid" style="background-color: #b3d9ff;padding: 30px;">
@@ -157,7 +174,10 @@
                             exports from the US to Japan. <br> What type of agreement do we need today?</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Link to that historic point</a>
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Reagan Nakasone.mp4">
+                            Open Video
+                        </button>
                     </div>
                 </div>
             </div>
@@ -178,7 +198,8 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="../imgFolder/historyPhotos/finalizing US-Soviet.jpg" class="card-img-top" alt="Employee 1">
+                    <img src="../imgFolder/historyPhotos/finalizing US-Soviet.jpg" class="card-img-top"
+                        alt="Employee 1">
                     <div class="card-body">
                         <h5 class="card-title"><b> National Security Council Meeting</b></h5>
                         <p class="card-text"> The White House Situation Room <br>
@@ -382,292 +403,6 @@
         </div> <!-- end of fifth (last) row-->
     </div>
 
-    <!-- first history point
-    <section>
-        <div class="container-fluid reveal" style="background-color: #e6f2ff;padding: 30px;">
-            <div class="row">
-                <div class="col-6">
-                    <h2>First Oil Shock (1973)</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus ac ipsum id tristique.
-                        In
-                        blandit, purus ac ultrices molestie, metus leo volutpat augue, sit amet imperdiet nisi
-                        tortor
-                        facilisis elit. Nunc rutrum nisl nisi, euismod faucibus lacus blandit eu. Suspendisse
-                        potenti.
-                        Etiam volutpat sit amet massa at tempus. Quisque sagittis suscipit lacus quis dictum. Ut
-                        pulvinar venenatis dui, vel malesuada eros semper a. Quisque viverra elit odio, ut placerat
-                        lectus rhoncus eget. Vestibulum suscipit eleifend diam eu aliquam.
-                    </p>
-                    <p>
-                        Phasellus vehicula justo et volutpat semper. Aliquam pretium eget elit vel accumsan. Etiam
-                        sed
-                        feugiat orci. Nulla et purus ullamcorper, convallis arcu sit amet, molestie eros. Donec nunc
-                        mauris, ultricies nec bibendum ac, suscipit quis arcu. Pellentesque consectetur ex orci, a
-                        suscipit orci vulputate sed. Nulla aliquet facilisis malesuada.</p>
-                </div>
-                <div class="col-4 offset-2">
-                    <img src="../imgFolder/NuclearEnergy.jpg" style="border: 4px solid white;border-radius: 50%;"
-                        width="300px" height="250px" alt="History">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- second history point
-    <section>
-        <div class="container-fluid reveal" style="background-color: #b3d9ff;padding: 30px;">
-            <div class="row">
-                <div class="col-4 offset-1">
-                    <img src="../imgFolder/NuclearEnergy.jpg" style="border: 4px solid white;border-radius: 50%;"
-                        width="300px" height="250px" alt="History">
-                </div>
-                <div class="col-6 offset-1">
-                    <h2>Second Oil Shock (1979) </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus ac ipsum id tristique.
-                        In
-                        blandit, purus ac ultrices molestie, metus leo volutpat augue, sit amet imperdiet nisi
-                        tortor
-                        facilisis elit. Nunc rutrum nisl nisi, euismod faucibus lacus blandit eu. Suspendisse
-                        potenti.
-                        Etiam volutpat sit amet massa at tempus. Quisque sagittis suscipit lacus quis dictum. Ut
-                        pulvinar venenatis dui, vel malesuada eros semper a. Quisque viverra elit odio, ut placerat
-                        lectus rhoncus eget. Vestibulum suscipit eleifend diam eu aliquam.
-                    </p>
-                    <p>
-                        Phasellus vehicula justo et volutpat semper. Aliquam pretium eget elit vel accumsan. Etiam
-                        sed
-                        feugiat orci. Nulla et purus ullamcorper, convallis arcu sit amet, molestie eros. Donec nunc
-                        mauris, ultricies nec bibendum ac, suscipit quis arcu. Pellentesque consectetur ex orci, a
-                        suscipit orci vulputate sed. Nulla aliquet facilisis malesuada.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- third history point
-    <section>
-        <div class="container-fluid reveal" style="background-color: #e6f2ff;padding: 30px;">
-            <div class="row">
-                <div class="col-6">
-                    <h2>Reagan-Nakasone Energy Agreement (1983) </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus ac ipsum id tristique.
-                        In
-                        blandit, purus ac ultrices molestie, metus leo volutpat augue, sit amet imperdiet nisi
-                        tortor
-                        facilisis elit. Nunc rutrum nisl nisi, euismod faucibus lacus blandit eu. Suspendisse
-                        potenti.
-                        Etiam volutpat sit amet massa at tempus. Quisque sagittis suscipit lacus quis dictum. Ut
-                        pulvinar venenatis dui, vel malesuada eros semper a. Quisque viverra elit odio, ut placerat
-                        lectus rhoncus eget. Vestibulum suscipit eleifend diam eu aliquam.
-                    </p>
-                    <p>
-                        Phasellus vehicula justo et volutpat semper. Aliquam pretium eget elit vel accumsan. Etiam
-                        sed
-                        feugiat orci. Nulla et purus ullamcorper, convallis arcu sit amet, molestie eros. Donec nunc
-                        mauris, ultricies nec bibendum ac, suscipit quis arcu. Pellentesque consectetur ex orci, a
-                        suscipit orci vulputate sed. Nulla aliquet facilisis malesuada.</p>
-                </div>
-                <div class="col-4 offset-2">
-                    <img src="../imgFolder/NuclearEnergy.jpg" style="border: 4px solid white;border-radius: 50%;"
-                        width="300px" height="250px" alt="History">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- fourth history point
-    <section>
-        <div class="container-fluid reveal" style="background-color: #b3d9ff;padding: 30px;">
-            <div class="row">
-                <div class="col-4 offset-1">
-                    <img src="../imgFolder/NuclearEnergy.jpg" style="border: 4px solid white;border-radius: 50%;"
-                        width="300px" height="250px" alt="History">
-                </div>
-                <div class="col-6 offset-1">
-                    <h2>US-Japan Nuclear Cooperation Agreement (1988)</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus ac ipsum id tristique.
-                        In
-                        blandit, purus ac ultrices molestie, metus leo volutpat augue, sit amet imperdiet nisi
-                        tortor
-                        facilisis elit. Nunc rutrum nisl nisi, euismod faucibus lacus blandit eu. Suspendisse
-                        potenti.
-                        Etiam volutpat sit amet massa at tempus. Quisque sagittis suscipit lacus quis dictum. Ut
-                        pulvinar venenatis dui, vel malesuada eros semper a. Quisque viverra elit odio, ut placerat
-                        lectus rhoncus eget. Vestibulum suscipit eleifend diam eu aliquam.
-                    </p>
-                    <p>
-                        Phasellus vehicula justo et volutpat semper. Aliquam pretium eget elit vel accumsan. Etiam
-                        sed
-                        feugiat orci. Nulla et purus ullamcorper, convallis arcu sit amet, molestie eros. Donec nunc
-                        mauris, ultricies nec bibendum ac, suscipit quis arcu. Pellentesque consectetur ex orci, a
-                        suscipit orci vulputate sed. Nulla aliquet facilisis malesuada.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- fifth history point-
-    <section>
-        <div class="container-fluid reveal" style="background-color: #e6f2ff;padding: 30px;">
-            <div class="row">
-                <div class="col-6">
-                    <h2>Climate Issues (and COP)</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus ac ipsum id tristique.
-                        In
-                        blandit, purus ac ultrices molestie, metus leo volutpat augue, sit amet imperdiet nisi
-                        tortor
-                        facilisis elit. Nunc rutrum nisl nisi, euismod faucibus lacus blandit eu. Suspendisse
-                        potenti.
-                        Etiam volutpat sit amet massa at tempus. Quisque sagittis suscipit lacus quis dictum. Ut
-                        pulvinar venenatis dui, vel malesuada eros semper a. Quisque viverra elit odio, ut placerat
-                        lectus rhoncus eget. Vestibulum suscipit eleifend diam eu aliquam.
-                    </p>
-                    <p>
-                        Phasellus vehicula justo et volutpat semper. Aliquam pretium eget elit vel accumsan. Etiam
-                        sed
-                        feugiat orci. Nulla et purus ullamcorper, convallis arcu sit amet, molestie eros. Donec nunc
-                        mauris, ultricies nec bibendum ac, suscipit quis arcu. Pellentesque consectetur ex orci, a
-                        suscipit orci vulputate sed. Nulla aliquet facilisis malesuada.</p>
-                </div>
-                <div class="col-4 offset-2">
-                    <img src="../imgFolder/NuclearEnergy.jpg" style="border: 4px solid white;border-radius: 50%;"
-                        width="300px" height="250px" alt="History">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- sixth history point-
-    <section>
-        <div class="container-fluid reveal" style="background-color: #b3d9ff;padding: 30px;">
-            <div class="row">
-                <div class="col-4 offset-1">
-                    <img src="../imgFolder/NuclearEnergy.jpg" style="border: 4px solid white;border-radius: 50%;"
-                        width="300px" height="250px" alt="History">
-                </div>
-                <div class="col-6 offset-1">
-                    <h2>Fukushima Accident and Response (2011- ) </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus ac ipsum id tristique.
-                        In
-                        blandit, purus ac ultrices molestie, metus leo volutpat augue, sit amet imperdiet nisi
-                        tortor
-                        facilisis elit. Nunc rutrum nisl nisi, euismod faucibus lacus blandit eu. Suspendisse
-                        potenti.
-                        Etiam volutpat sit amet massa at tempus. Quisque sagittis suscipit lacus quis dictum. Ut
-                        pulvinar venenatis dui, vel malesuada eros semper a. Quisque viverra elit odio, ut placerat
-                        lectus rhoncus eget. Vestibulum suscipit eleifend diam eu aliquam.
-                    </p>
-                    <p>
-                        Phasellus vehicula justo et volutpat semper. Aliquam pretium eget elit vel accumsan. Etiam
-                        sed
-                        feugiat orci. Nulla et purus ullamcorper, convallis arcu sit amet, molestie eros. Donec nunc
-                        mauris, ultricies nec bibendum ac, suscipit quis arcu. Pellentesque consectetur ex orci, a
-                        suscipit orci vulputate sed. Nulla aliquet facilisis malesuada.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- seventh history point-
-    <section>
-        <div class="container-fluid reveal" style="background-color: #e6f2ff;padding: 30px;">
-            <div class="row">
-                <div class="col-6">
-                    <h2>Ukraine War and Third Oil Shock (2022- )</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus ac ipsum id tristique.
-                        In
-                        blandit, purus ac ultrices molestie, metus leo volutpat augue, sit amet imperdiet nisi
-                        tortor
-                        facilisis elit. Nunc rutrum nisl nisi, euismod faucibus lacus blandit eu. Suspendisse
-                        potenti.
-                        Etiam volutpat sit amet massa at tempus. Quisque sagittis suscipit lacus quis dictum. Ut
-                        pulvinar venenatis dui, vel malesuada eros semper a. Quisque viverra elit odio, ut placerat
-                        lectus rhoncus eget. Vestibulum suscipit eleifend diam eu aliquam.
-                    </p>
-                    <p>
-                        Phasellus vehicula justo et volutpat semper. Aliquam pretium eget elit vel accumsan. Etiam
-                        sed
-                        feugiat orci. Nulla et purus ullamcorper, convallis arcu sit amet, molestie eros. Donec nunc
-                        mauris, ultricies nec bibendum ac, suscipit quis arcu. Pellentesque consectetur ex orci, a
-                        suscipit orci vulputate sed. Nulla aliquet facilisis malesuada.</p>
-                </div>
-                <div class="col-4 offset-2">
-                    <img src="../imgFolder/NuclearEnergy.jpg" style="border: 4px solid white;border-radius: 50%;"
-                        width="300px" height="250px" alt="History">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- eigthth history point-
-    <section>
-        <div class="container-fluid reveal" style="background-color: #b3d9ff;padding: 30px;">
-            <div class="row">
-                <div class="col-4 offset-1">
-                    <img src="../imgFolder/countryPhoto.jpg" style="border: 4px solid white;" width="500px"
-                        height="400px" alt="History">
-                </div>
-                <div class="col-6 offset-1">
-                    <h2>Euro-Asia-Pacific coalition (the new G-11) of democratically liked minded nations</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus ac ipsum id tristique.
-                        In
-                        blandit, purus ac ultrices molestie, metus leo volutpat augue, sit amet imperdiet nisi
-                        tortor
-                        facilisis elit. Nunc rutrum nisl nisi, euismod faucibus lacus blandit eu. Suspendisse
-                        potenti.
-                        Etiam volutpat sit amet massa at tempus. Quisque sagittis suscipit lacus quis dictum. Ut
-                        pulvinar venenatis dui, vel malesuada eros semper a. Quisque viverra elit odio, ut placerat
-                        lectus rhoncus eget. Vestibulum suscipit eleifend diam eu aliquam.
-                    </p>
-                    <p>
-                        Phasellus vehicula justo et volutpat semper. Aliquam pretium eget elit vel accumsan. Etiam
-                        sed
-                        feugiat orci. Nulla et purus ullamcorper, convallis arcu sit amet, molestie eros. Donec nunc
-                        mauris, ultricies nec bibendum ac, suscipit quis arcu. Pellentesque consectetur ex orci, a
-                        suscipit orci vulputate sed. Nulla aliquet facilisis malesuada.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- nineth history point-
-    <section>
-        <div class="container-fluid reveal" style="background-color: #e6f2ff;padding: 30px;">
-            <div class="row">
-                <div class="col-6">
-                    <h2>The Santa Fe Seminar and Leaders Program</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus ac ipsum id tristique.
-                        In
-                        blandit, purus ac ultrices molestie, metus leo volutpat augue, sit amet imperdiet nisi
-                        tortor
-                        facilisis elit. Nunc rutrum nisl nisi, euismod faucibus lacus blandit eu. Suspendisse
-                        potenti.
-                        Etiam volutpat sit amet massa at tempus. Quisque sagittis suscipit lacus quis dictum. Ut
-                        pulvinar venenatis dui, vel malesuada eros semper a. Quisque viverra elit odio, ut placerat
-                        lectus rhoncus eget. Vestibulum suscipit eleifend diam eu aliquam.
-                    </p>
-                    <p>
-                        Phasellus vehicula justo et volutpat semper. Aliquam pretium eget elit vel accumsan. Etiam
-                        sed
-                        feugiat orci. Nulla et purus ullamcorper, convallis arcu sit amet, molestie eros. Donec nunc
-                        mauris, ultricies nec bibendum ac, suscipit quis arcu. Pellentesque consectetur ex orci, a
-                        suscipit orci vulputate sed. Nulla aliquet facilisis malesuada.</p>
-                </div>
-                <div class="col-4 offset-2">
-                    <img src="../imgFolder/NuclearEnergy.jpg" style="border: 4px solid white;border-radius: 50%;"
-                        width="300px" height="250px" alt="History">
-                </div>
-            </div>
-        </div>
-    </section>
--->
-
-
-    <!-- 
-        Structure
-        first section
-        image showing history
-
-        describe that we will go through the history of energy together
-
-        then the materialize of history
-
-
-      
-    -->
 
 
 
