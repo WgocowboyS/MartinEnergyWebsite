@@ -65,7 +65,11 @@
 
                 <ul>
                     <li id="firstItem">
-                        Video 1 - Introduction to Module by <a href="facultyPage.html#WilliamFMartin"> Mr. Bill Martin!</a>
+                        Video 1 - Introduction to Module by <a href="facultyPage.html#WilliamFMartin"> Mr. Bill
+                            Martin!</a>
+                    </li>
+                    <li id="keyQuestionsItem">
+                        Key Questions
                     </li>
                     <li id="secondItem">
                         Reading 1 - Federal Document
@@ -74,7 +78,7 @@
                         Video 2 - Geopolitics by <a href="facultyPage.html#Tsukada"> Mr. Tsukada</a>
                     </li>
                     <li id="fourthItem">
-                        Reading 2 - TBA
+                        Reading 2 - Letter from Ronald Reagan To Mr. Bill Martin
                     </li>
                     <li id="quiz">
                         Discussion
@@ -107,7 +111,7 @@
             </div>
 
             <div class="text-center" style="margin-top: 10px;">
-                <button class="btn btn-primary" onclick="presentFirstReading()" id="buttonVideo1"> Continue to next
+                <button class="btn btn-primary" onclick="presentKeyQuestions()" id="buttonVideo1"> Continue to next
                     lesson!</button>
                 <button class="btn btn-primary" onclick="presentSecondReading()" id="buttonVideo2" hidden> Continue to
                     next
@@ -115,41 +119,128 @@
             </div>
         </div>
 
+        <div class="row" id="keyQuestions" hidden>
+            <div class="col-8 offset-2 text-center" style="margin-top: 10px;">
+                <h1> Consider These Questions While Reading The Documents and Watching The Videos</h1>
+                <ul>
+                    <li>
+                        Siberian Pipeline—Economic War against Soviet Union (including NSSD 66). What might our
+                        adversaries be planning against us?
+                    </li>
+                    <li>
+                        Energy Espionage—past experiences and future vulnerabilities.
+                    </li>
+                    <li>
+                        Defining Economic Security: Williamsburg Summit Communique: 1983. What is the global economic
+                        outlook and Implicatons for electric power? What role can nuclear power play?
+                    </li>
+                    <li>
+                        Middle East protection war plan (Iran-Iraq war). How do we protect oil/gas sea lanes against our
+                        top adversary, China?
+                    </li>
+                    <li>
+                        Ending the Cold War —how do we confront current Cold War with China? How do we compete with
+                        Russia/China in exporting nuclear power plants?
+                    </li>
+                    <li>
+                        Launching ITER — a plan of international cooperation; what further cooperation is needed for
+                        decarbonization and energy security on a global scale? Is Hydrogen a solution? Nuclear power:
+                        large scale and SMR? Fusion?
+                    </li>
+                    <li>
+                        Nuclear power and Nuclear non-proliferation (the US-Japan nuclear cooperation
+                        agreement)…challenges confronting the world today. How do we showcase Rokkasho? Why is Rokkasho
+                        important to nuclear power?
+                    </li>
+                    <li>
+                        Protecting vital infrastructure: — Abu Nidal terrorist airport attack. Potential attacks on
+                        vulnerable electrical infrastructure. What has Fukushima taught us about nuclear safety?
+                    </li>
+                    <li>
+                        Martin-Trump North Korea — the importance of “What IF”. How do we deal with authoritative
+                        leaders in China, North Korea, Russia? What will be impact on energy security?
+                    </li>
+                    <li>
+                        National Security calendar…from Reagan to Trump (unique Martin). How can we use the calendar for
+                        our own electric utility companies and within electric utilities planning for future growth in
+                        nuclear power?
+                    </li>
+                </ul>
+                <div class="text-center" style="margin-top: 10px;">
+                    <button class="btn btn-primary" onclick="presentFirstReading()"> Continue to next lesson!</button>
+                </div>
+            </div>
+
+        </div>
+
         <!-- first reading-->
         <div class="row" id="firstReading" style="height: 80vh;" hidden>
             <!--  can use google docs, embed, or iframe, using embed rn-->
-            <embed src="../imgFolder/documents/Moudle7/Reading 1.pdf" width="70%" height="90%" />
+            <embed src="../imgFolder/documents/Module7/Reading 1.pdf" width="70%" height="90%" />
             <div class="text-center" style="margin-top: 10px;">
                 <button class="btn btn-primary" onclick="presentSecondVideo()"> Continue to next lesson!</button>
             </div>
         </div>
 
         <!-- second reading  -->
-        <div class="row" id="secondReading" style="height: 80vh;" hidden>
-            <div class="col-6 offset-4">
-                <h5> Currently the same reading as the previous reading</h5>
+        <div id="secondReading" hidden>
+            <div class="row" style="height: 70vh;">
+                <div class="col-3">
+                    <h4> Here are other documents to look through in this module:</h4>
+                    <ul>
+                        <li>
+                            <a href="../imgFolder/documents/Module7/Martin cable to CIA 4_28_83 on IEA gas study.pdf"
+                                download>Martin to CIA on IEA Gas Study</a>
+                        </li>
+                        <li>
+                            <a href="../imgFolder/documents/Module7/National Plan of Action, Iran-Iraq War.pdf"
+                                download>National Plan of Action, Iran Iraq War</a>
+                        </li>
+                        <li>
+                            <a href="../imgFolder/documents/Module7/Radio Address Camp David 9-29-84.pdf" download>Radio
+                                Access Camp David</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <h2 class="text-center">Letter From President Reagan to Mr. Martin</h2>
+                    <embed src="../imgFolder/documents/Module7/Letter from Ronald Reagan 5-24-83.pdf" width="100%"
+                        height="100%" />
+                </div>
             </div>
-            <embed src="../imgFolder/documents/Module1Document.pdf" width="70%" height="90%" />
-            <div class="text-center" style="margin-top: 10px;">
+            <div class="text-center" style="margin-top: 10vh;">
                 <button class="btn btn-primary" onclick="presentQuiz()"> Continue to next lesson!</button>
-            </div>
-        </div>
-
-        <div class="row" id="quizSection" hidden>
-            <div class="col-6 offset-3">
-                <h1> <b> Discussion: </b></h1>
-                <h2> Question: How do you predict oil prices?</h2>
-                <textarea id="userAnswer" style="width: 100%;"></textarea>
-                <button class="btn btn-primary col-2 offset-5" onclick="submitQuiz()"> Submit</button>
             </div>
         </div>
 
         <div class="row" id="resultsSection" hidden>
             <div class="col-6 offset-3">
-                <h1> Results:</h1>
                 <h5> You answered: </h5>
                 <p id="userAnswerResult"> </p>
-                <a class="btn btn-primary" href="index.html">Return Home</a>
+            </div>
+        </div>
+
+        <div id="discussionArea" hidden>
+            <div class="row" id="quizSection">
+                <div class="col-6 offset-3">
+                    <h1> <b> Discussion: </b></h1>
+                    <h2> Question: How do you predict oil prices?</h2>
+                    <textarea id="userAnswer" style="width: 100%;"></textarea>
+                    <button class="btn btn-primary col-2 offset-5" onclick="submitQuiz()"> Submit</button>
+                </div>
+            </div>
+            <div class="row" id="discussionTable">
+                <div class="col-8 offset-2">
+                    <h3 class="text-center"> Other Replies:</h3>
+                    <ul class="text-align-left">
+                        <li> One Answer Here</li>
+                        <li> Another Answer Here</li>
+                        <li> Last Answer Here</li>
+                    </ul>
+                    <div class="col-12 text-center">
+                        <a class="btn btn-primary" href="index.html">Return Home</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
