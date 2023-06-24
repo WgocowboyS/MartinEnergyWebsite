@@ -80,6 +80,9 @@
                     <li id="fourthItem">
                         Reading 2 - Letter from Ronald Reagan To Mr. Bill Martin
                     </li>
+                    <li id="fifthItem">
+                        Video 3 - National Securiy by <a href="facultyPage.html#DavidCohen"> Mr. Cohen</a>
+                    </li>
                     <li id="quiz">
                         Discussion
                     </li>
@@ -108,6 +111,12 @@
                     <source src="../imgFolder/videos/Training/Tsukada Geopolitics Module.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <!-- video three -->
+                <video width="70%" height="100%" id="video3" controls style="border: 6px solid white;" hidden>
+                    <source src="../imgFolder/videos/Training/David Cohen National Security.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
             <div class="text-center" style="margin-top: 10px;">
@@ -116,6 +125,10 @@
                 <button class="btn btn-primary" onclick="presentSecondReading()" id="buttonVideo2" hidden> Continue to
                     next
                     lesson!</button>
+
+                <button class="btn btn-primary" onclick="presentQuiz()" id="buttonVideo3" hidden> Continue to next
+                    lesson!</button>
+
             </div>
         </div>
 
@@ -209,7 +222,7 @@
                 </div>
             </div>
             <div class="text-center" style="margin-top: 10vh;">
-                <button class="btn btn-primary" onclick="presentQuiz()"> Continue to next lesson!</button>
+                <button class="btn btn-primary" onclick="presentThirdVideo()"> Continue to next lesson!</button>
             </div>
         </div>
 

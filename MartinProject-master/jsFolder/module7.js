@@ -45,7 +45,19 @@ function presentSecondVideo() {
     document.getElementById("secondItem").classList.remove("bold");
     //innerHTML="Reading 1 - XXX";
     document.getElementById("buttonVideo2").removeAttribute("hidden");
+}
 
+function presentThirdVideo(){
+
+    document.getElementById("video2").setAttribute("hidden", "hidden");
+    document.getElementById("video3").removeAttribute("hidden");
+    document.getElementById("secondReading").setAttribute("hidden", "hidden");
+    document.getElementById("videoSection").removeAttribute("hidden");
+    document.getElementById("fifthItem").classList.add("bold");
+    //innerHTML="<b>Video 2 - XXX </b>";
+    document.getElementById("fourthItem").classList.remove("bold");
+    //innerHTML="Reading 1 - XXX";
+    document.getElementById("buttonVideo3").removeAttribute("hidden");
 }
 
 function presentSecondReading() {
@@ -60,11 +72,13 @@ function presentSecondReading() {
 }
 
 function presentQuiz() {
-    document.getElementById("secondReading").setAttribute("hidden", "hidden");
+    document.getElementById("video3").pause();
+    //document.getElementById("secondReading").setAttribute("hidden", "hidden");
+    document.getElementById("videoSection").setAttribute("hidden","hidden");
     document.getElementById("discussionArea").removeAttribute("hidden");
     document.getElementById("quiz").classList.add("bold");
     //innerHTML="<b>Video 2 - XXX </b>";
-    document.getElementById("fourthItem").classList.remove("bold");
+    document.getElementById("fifthItem").classList.remove("bold");
 }
 
 function submitQuiz() {
