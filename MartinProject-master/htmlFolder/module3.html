@@ -16,7 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- this is the custom js for the training moduals page-->
-    <script src="../jsFolder/module4.js"></script>
+    <script src="../jsFolder/module3.js"></script>
 
     <!-- this is custom css for training moduals page-->
     <link rel="stylesheet" type="text/css" href="../cssFolder/generalTrainingModuals.css">
@@ -67,6 +67,9 @@
                     <li id="firstItem">
                         Video 1 - Introduction by <a href="facultyPage.html#WilliamFMartin"> Mr. Bill Martin!</a>
                     </li>
+                    <li id="keyQuestionsItem">
+                        Key Questions
+                    </li>
                     <li id="secondItem">
                         Reading 1 - US-Japan Nuclear Cooperation agreement of 1988
                     </li>
@@ -77,7 +80,7 @@
                         Reading 2 - TBA
                     </li>
                     <li id="quiz">
-                        Quiz
+                        Discussion
                     </li>
                 </ul>
             </div>
@@ -95,7 +98,8 @@
 
                 <!-- video one-->
                 <video width="70%" height="100%" id="video1" controls style="border: 6px solid white;">
-                    <source src="../imgFolder/videos/Training/Trainging Course Importance of Nuclear.mp4" type="video/mp4">
+                    <source src="../imgFolder/videos/Training/Trainging Course Importance of Nuclear.mp4"
+                        type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
 
@@ -107,12 +111,63 @@
             </div>
 
             <div class="text-center" style="margin-top: 10px;">
-                <button class="btn btn-primary" onclick="presentFirstReading()" id="buttonVideo1"> Continue to next
+                <button class="btn btn-primary" onclick="presentKeyQuestions()" id="buttonVideo1"> Continue to next
                     lesson!</button>
                 <button class="btn btn-primary" onclick="presentSecondReading()" id="buttonVideo2" hidden> Continue to
                     next
                     lesson!</button>
             </div>
+        </div>
+
+        <div class="row" id="keyQuestions" hidden>
+            <div class="col-8 offset-2 text-center" style="margin-top: 10px;">
+                <h1> Consider These Questions While Reading The Documents and Watching The Videos</h1>
+                <ul>
+                    <li>
+                        The life of nuclear plants has been extended in the US to 60,80 years; how can Japan learn from
+                        that experience; By extending reactor life and upgrades, nuclear power plants are getting better
+                        with age.
+                    </li>
+
+                    <li>
+                        Contrast the roles of the NRA and NRC. How can regulation be both safe and streamlined?
+                    </li>
+
+                    <li>
+                        Japan and the US are struggling with waste disposal? What are the options, including
+                        recycling/reprocessing; what are options for long term disposal of waste—“once through” as well
+                        as vitrified?
+                    </li>
+
+                    <li>
+                        What are the investment needs for new build reactors? How many new reactors will the US and
+                        Japan need in the future to ensure energy security and decarbonization in line with climate
+                        objectives?
+                    </li>
+
+                    <li>
+                        Nuclear Power is recovering in Japan; and is being enthusiastically promoted in the US. How can
+                        our nations work together in partnership to build new capacity?
+                    </li>
+
+                    <li>
+                        Innovation is a key word among the younger generation of engineers? What innovations are
+                        possible in new power development regarding large scale and SMRs fission reactors as well as
+                        fusion?
+                    </li>
+
+                    <li>
+                        How can the US and Japan work together to build capacity in other nations, especially developing
+                        nations to ensure safety and non-proliferation objectives? How will democratic countries compete
+                        with authoritative communist countries such as China and Russia to build infrastructure
+                        globally?
+                    </li>
+                </ul>
+                <div class="text-center" style="margin-top: 10px;">
+                    <button class="btn btn-primary" onclick="presentFirstReading()"> Continue to next lesson!</button>
+                </div>
+            </div>
+
         </div>
 
         <!-- first reading-->
@@ -135,23 +190,47 @@
             </div>
         </div>
 
-        <div class="row" id="quizSection" hidden>
-            <div class="col-6 offset-3">
-                <h1> <b> Quiz: </b></h1>
-                <h2> Question: How do you predict oil prices?</h2>
-                <textarea id="userAnswer" style="width: 100%;"></textarea>
-                <button class="btn btn-primary col-2 offset-5" onclick="submitQuiz()"> Submit</button>
+
+        <div class="row" id="resultsSection" hidden>
+            <div class="col-6 offset-3" style="border: 2px solid black;">
+                <h5> You answered: </h5>
+                <p id="userAnswerResult"> </p>
             </div>
         </div>
 
-        <div class="row" id="resultsSection" hidden>
-            <div class="col-6 offset-3">
-                <h1> Results:</h1>
-                <h5> You answered: </h5>
-                <p id="userAnswerResult"> </p>
-                <a class="btn btn-primary" href="index.html">Return Home</a>
+        <div id="discussionArea" hidden>
+            <div class="row" id="quizSection" hidden>
+                <div class="col-6 offset-3">
+                    <h1> <b> Discussion: </b></h1>
+                    <h5> 1. How do we measure health of the nuclear industry? US and Japan?<br>
+
+                        2. What are most important trends (Japan-restart; extension of reactor life; new build) and in
+                        the
+                        US (maintaining existing fleet and innovative technologies such as SMRs)? <br>
+
+                        3. What are main obstacles toward improvement in nuclear energy sector? Price? Market?
+                        Technology?
+                        <br>
+                    </h5>
+                    <textarea id="userAnswer" style="width: 100%;"></textarea>
+                    <button class="btn btn-primary col-2 offset-5" onclick="submitQuiz()"> Submit</button>
+                </div>
+            </div>
+            <div class="row" id="discussionTable">
+                <div class="col-8 offset-2">
+                    <h3 class="text-center"> Other Replies:</h3>
+                    <ul class="text-align-left">
+                        <li> One Answer Here</li>
+                        <li> Another Answer Here</li>
+                        <li> Last Answer Here</li>
+                    </ul>
+                    <div class="col-12 text-center">
+                        <a class="btn btn-primary" href="generalTrainingModuals.html">Return To Training Modules</a>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 
     <!-- 

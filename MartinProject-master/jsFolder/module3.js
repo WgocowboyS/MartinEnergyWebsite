@@ -12,8 +12,23 @@ function presentFirstVideo() {
     //.innerHTML="<b> Video 1 - XXX </b>";
 }
 
-function presentFirstReading() {
+
+function presentKeyQuestions() {
+    //hides video sextion
     document.getElementById("video1").pause();
+    document.getElementById("videoSection").setAttribute("hidden", "hidden");
+    document.getElementById("firstItem").classList.remove("bold");
+
+    //reveal key questions
+    document.getElementById("keyQuestionsItem").classList.add("bold");
+    document.getElementById("keyQuestions").removeAttribute("hidden");
+}
+
+
+function presentFirstReading() {
+    document.getElementById("keyQuestionsItem").classList.remove("bold");
+    document.getElementById("keyQuestions").setAttribute("hidden", "hidden");
+   
     document.getElementById("videoSection").setAttribute("hidden", "hidden");
     document.getElementById("firstReading").removeAttribute("hidden");
     document.getElementById("firstItem").classList.remove("bold");
@@ -51,6 +66,7 @@ function presentQuiz() {
     document.getElementById("secondReading").setAttribute("hidden", "hidden");
     document.getElementById("quizSection").removeAttribute("hidden");
     document.getElementById("quiz").classList.add("bold");
+    document.getElementById("discussionArea").removeAttribute("hidden");
     //innerHTML="<b>Video 2 - XXX </b>";
     document.getElementById("fourthItem").classList.remove("bold");
 }
