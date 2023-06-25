@@ -79,6 +79,9 @@
                     <li id="fourthItem">
                         Reading 2 - TBA
                     </li>
+                    <li id="fifthItem">
+                        Video 3 - Nucelar Energy <a href="facultyPage.html#DaleKlein"> Mr. Klein</a>
+                    </li>
                     <li id="quiz">
                         Discussion
                     </li>
@@ -108,6 +111,12 @@
                     <source src="../imgFolder/videos/Training/Joe Perkowski Nuclear.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <!-- video three -->
+                <video width="70%" height="100%" id="video3" controls style="border: 6px solid white;" hidden>
+                    <source src="../imgFolder/videos/Training/Dale Klein Nuclear.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
             <div class="text-center" style="margin-top: 10px;">
@@ -115,6 +124,8 @@
                     lesson!</button>
                 <button class="btn btn-primary" onclick="presentSecondReading()" id="buttonVideo2" hidden> Continue to
                     next
+                    lesson!</button>
+                <button class="btn btn-primary" onclick="presentQuiz()" id="buttonVideo3" hidden> Continue to next
                     lesson!</button>
             </div>
         </div>
@@ -186,7 +197,7 @@
             </div>
             <embed src="../imgFolder/documents/Module1Document.pdf" width="70%" height="90%" />
             <div class="text-center" style="margin-top: 10px;">
-                <button class="btn btn-primary" onclick="presentQuiz()"> Continue to next lesson!</button>
+                <button class="btn btn-primary" onclick="presentThirdVideo()"> Continue to next lesson!</button>
             </div>
         </div>
 
@@ -199,7 +210,7 @@
         </div>
 
         <div id="discussionArea" hidden>
-            <div class="row" id="quizSection" hidden>
+            <div class="row" id="quizSection">
                 <div class="col-6 offset-3">
                     <h1> <b> Discussion: </b></h1>
                     <h5> 1. How do we measure health of the nuclear industry? US and Japan?<br>
